@@ -1,167 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Baran Yalcin — freelance software engineer specializing in n8n automation, workflow development, software integration, AI, and computer vision.">
-  <title>Baran Yalcin — Software Engineer & Automation Specialist</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baran Yalcin — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Software Engineer & Automation Specialist</p>
-          <h1>Turn repetitive work into reliable, automated systems.</h1>
-          <p class="lead">
-            Hi, I’m <strong>Baran Yalcin</strong>, a freelance software engineer specializing in
-            automation, workflow development, and software integration.
-          </p>
-          <p class="lead">
-            My current focus is <strong>n8n-based automation</strong>, API integrations,
-            data processing, and AI-powered workflows.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">Let's work together</a>
-            <a class="button secondary" href="#services">What I do</a>
-          </div>
-        </div>
+<div class="wrap">
 
-        <aside class="profile-card">
-          <!-- Replace profile.jpg with your actual profile photo. -->
-          <img src="profile.jpg" alt="Baran Yalcin" class="profile-picture">
-          <h2>Baran Yalcin</h2>
-          <p>Freelance Software Engineer</p>
-          <div class="social-links" aria-label="Social links">
-            <!-- Replace the placeholder URLs below with your profiles. -->
-            <a href="https://github.com/yalcinbar" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/yalcinbar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </aside>
-      </div>
-    </section>
+  <header>
+    <img src="profile.jpg" class="avatar">
+    <div class="head-text">
+      <h1>Baran Yalcin</h1>
+      <p>Software Engineer</p>
+    </div>
+  </header>
 
-    <section id="services" class="section">
-      <div class="container">
-        <p class="eyebrow">What I Do</p>
-        <h2>Automation, AI, and custom software.</h2>
+  <p class="intro">
+    I'm a software engineer based in Izmir, Turkey, with a decade split across
+    embedded systems, computer vision, and full-stack development for automotive,
+    medical, and consumer electronics clients. These days I focus on automation —
+    designing systems and workflows that let people and software work together
+    with less manual effort.
+  </p>
 
-        <div class="cards">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>Workflow Automation</h3>
-            <p>
-              I design and build automated workflows using <strong>n8n</strong>, connecting
-              the tools and services you already use.
-            </p>
-            <ul>
-              <li>Automating repetitive business processes</li>
-              <li>Connecting APIs and different software systems</li>
-              <li>Data collection, transformation, and processing</li>
-              <li>Automated notifications and reporting</li>
-              <li>Scheduled and event-driven workflows</li>
-              <li>AI services integrated into existing workflows</li>
-              <li>Custom integrations when an off-the-shelf node isn't enough</li>
-            </ul>
-          </article>
+  <p class="intro intro-tight">
+    I work across the stack: architecting integrations between tools and
+    services, building the software that holds a process together, and
+    untangling workflows that have outgrown their original design. Comfortable
+    moving between hardware-adjacent and purely software problems, and used to
+    picking up whatever a project actually needs.
+    <br>
+    <br> For more:
+  </p>
 
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>AI & Computer Vision</h3>
-            <p>
-              I have experience building software around machine learning, computer vision,
-              and image processing.
-            </p>
-            <ul>
-              <li>CNN-based product quality measurement</li>
-              <li>Medical imaging systems using CNN output</li>
-              <li>Computer vision for industrial process automation</li>
-              <li>Industrial camera and SDK integration</li>
-            </ul>
-          </article>
+  <ul class="contact-list">
+    <li>Check out my <a class="pill" href="byalcin_resume.pdf" download>résumé</a> or <a class="pill" href="https://www.linkedin.com/in/yalcinbar" target="_blank" rel="noopener">LinkedIn</a>.</li>
+    <li>See my projects on <a class="pill" href="https://github.com/yalcinbar" target="_blank" rel="noopener">GitHub</a>.</li>
+    <li>Find me on <a class="pill" href="https://www.upwork.com/freelancers/~01f9a2276fb63004bb" target="_blank" rel="noopener">Upwork</a>.</li>
+  </ul>
 
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>Custom Software</h3>
-            <p>
-              When automation requires custom software, I can build the components needed
-              to make the whole system work.
-            </p>
-            <ul>
-              <li>C++ desktop applications</li>
-              <li>ImageJ plugins and camera integrations</li>
-              <li>Full-stack web applications</li>
-              <li>React Native mobile applications</li>
-              <li>Embedded and low-level software</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="background" class="section section-alt">
-      <div class="container narrow">
-        <p class="eyebrow">Background</p>
-        <h2>A broad engineering background.</h2>
-        <p>
-          I started my career working primarily with <strong>embedded systems</strong>,
-          including bare-metal software, RTOS-based systems, Embedded Linux, device drivers,
-          and kernel development.
-        </p>
-        <p>
-          Since then, my work has expanded into computer vision, machine learning, web and
-          mobile development, and automation.
-        </p>
-        <p>
-          I've worked on projects involving <strong>imaging, medical systems, industrial
-          automation, scientific instruments, and consumer electronics</strong>.
-        </p>
-        <p>
-          <a class="text-link" href="https://www.yalcinbar.dev/byalcin_resume.pdf">
-            View my resume →
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <section id="writing" class="section">
-      <div class="container narrow">
-        <p class="eyebrow">Open Source & Writing</p>
-        <h2>Building and sharing.</h2>
-        <p>
-          Outside of client work, I develop and contribute to open-source software projects
-          and write about software engineering and technology.
-        </p>
-        <p>
-          Explore my projects and writings throughout this website.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container narrow">
-        <p class="eyebrow">Let's Automate Something</p>
-        <h2>Have a workflow that should be automated?</h2>
-        <p>
-          If you have a repetitive process, disconnected software systems, or a workflow
-          that requires too much manual work, let's turn it into an automated system.
-        </p>
-        <!-- Replace the email address with your preferred contact address. -->
-        <a class="button primary" href="mailto:YOUR_EMAIL@example.com">Get in touch</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© 2026 Baran Yalcin</span>
-      <div class="social-links">
-        <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://medium.com/@YOUR_USERNAME" target="_blank" rel="noopener noreferrer">Medium</a>
-      </div>
+  <footer>
+    <a class="footer-email" href="mailto:baran@yalcinbar.dev">baran@yalcinbar.dev</a>
+    <div class="footer-links">
+      <a class="icon-btn" href="https://www.linkedin.com/in/yalcinbar" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20.4h3.38V8.5zM5.25 3.6a1.96 1.96 0 100 3.92 1.96 1.96 0 000-3.92zM20.44 20.4h-3.37v-5.78c0-1.38-.03-3.15-1.92-3.15-1.93 0-2.22 1.5-2.22 3.05v5.88H9.56V8.5h3.24v1.62h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18v6.85z"/></svg>
+      </a>
+<!--
+      <a class="icon-btn" href="https://github.com/yalcinbar" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-1.03-.01-1.87-2.51.55-3.13-.61-3.33-1.17-.11-.29-.6-1.17-1.02-1.41-.35-.19-.85-.65-.01-.66.78-.01 1.34.72 1.53 1.02.9 1.51 2.33 1.08 2.9.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.4 9.4 0 015 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10 10 0 0012 2z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://medium.com/@yalcinbar" target="_blank" rel="noopener" aria-label="Medium">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5c0-.28-.11-.55-.31-.75L1.65 3.5V3h6.2l4.79 10.5L16.85 3H23v.5l-1.83 1.75a.5.5 0 00-.19.48v12.54a.5.5 0 00.19.48L23 20.5v.5h-8.23v-.5l1.88-1.83c.18-.18.18-.24.18-.5V8.12l-5.24 13.3h-.71L5.03 8.12v8.92c0 .35.1.58.32.78l2.44 2.96v.5H0v-.5l2.44-2.96c.22-.2.31-.43.3-.78V6.5z"/></svg>
+      </a>
+-->
     </div>
   </footer>
+
+</div>
 </body>
 </html>

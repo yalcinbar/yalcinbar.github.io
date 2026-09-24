@@ -1,0 +1,176 @@
+:root{
+  --paper:#F1F0EA;
+  --ink:#1C1F1D;
+  --ink-soft:#565B57;
+  --line:#D8D6CC;
+  --accent:#2E6F6B;
+  --accent-soft:#E7EEEC;
+  --maxw:700px;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter', system-ui, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2{
+  font-family:'Space Grotesk', system-ui, sans-serif;
+  margin:0;
+}
+
+a{ color:var(--accent); text-decoration:none; }
+a:hover, a:focus-visible{ text-decoration:underline; }
+a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:64px 24px 40px;
+}
+
+/* ---- header ---- */
+header{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.avatar{
+  width:112px;
+  height:112px;
+  border-radius:50%;
+  background:var(--accent);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Space Grotesk', sans-serif;
+  font-weight:600;
+  font-size:36px;
+  flex-shrink:0;
+  /* Swap this div for <img src="your-photo.jpg" class="avatar"> when you have one */
+}
+
+.head-text h1{
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:-0.01em;
+}
+
+.head-text p{
+  margin:4px 0 0;
+  color:var(--ink-soft);
+  font-size:16px;
+}
+
+/* ---- intro ---- */
+.intro{
+  margin-top:36px;
+  padding-top:32px;
+  border-top:1px solid var(--line);
+  font-size:17px;
+  max-width:58ch;
+}
+.intro.intro-tight{
+  margin-top:18px;
+  padding-top:0;
+  border-top:none;
+}
+
+/* ---- contact list ---- */
+.contact-list{
+  padding:0;
+  list-style:none;
+  max-width:58ch;
+  font-size:17px;
+  line-height:1.9;
+}
+.contact-list li{
+  position:relative;
+  padding-left:20px;
+}
+.contact-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0.62em;
+  width:7px;
+  height:7px;
+  background:var(--accent);
+}
+
+.pill{
+  display:inline-block;
+  padding:1px 5px;
+  background:var(--accent-soft);
+  border-radius:0;
+  color:var(--accent);
+  font-size:15px;
+  font-weight:500;
+}
+.pill:hover, .pill:focus-visible{
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+}
+
+.icon-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  background:var(--accent-soft);
+}
+.icon-btn svg{
+  width:16px;
+  height:16px;
+  fill:var(--accent);
+}
+.icon-btn:hover, .icon-btn:focus-visible{
+  background:var(--accent);
+}
+.icon-btn:hover svg, .icon-btn:focus-visible svg{
+  fill:#fff;
+}
+
+/* footer */
+footer{
+  margin-top:24px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+footer .footer-email{
+  display:flex;
+  align-items:center;
+  height:34px;
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+footer .footer-links{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+@media (max-width:520px){
+  .wrap{ padding:44px 20px 32px; }
+  footer{ flex-direction:column; align-items:flex-start; gap:16px; }
+}
+
+@media (prefers-reduced-motion:no-preference){
+  a, .avatar, .pill{ transition:color .15s ease, background-color .15s ease; }
+}
